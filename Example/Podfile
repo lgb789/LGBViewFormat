@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LGBViewFormat_Example' do
+  pod 'LGBViewFormat', :path => '../'
+
+  target 'LGBViewFormat_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
