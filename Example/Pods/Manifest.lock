@@ -1,0 +1,16 @@
+PODS:
+  - LGBViewFormat (0.1.0)
+
+DEPENDENCIES:
+  - LGBViewFormat (from `../`)
+
+EXTERNAL SOURCES:
+  LGBViewFormat:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LGBViewFormat: 2ae741714a97fa6ecb87180b26f77f889c735487
+
+PODFILE CHECKSUM: 36038c4e3195cfbf20d577481fd4407b2fa1d636
+
+COCOAPODS: 1.4.0

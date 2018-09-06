@@ -21,8 +21,11 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B8A33C9C2140C7F300870A71 /* LGBLableExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33C9B2140C7F200870A71 /* LGBLableExample.m */; };
+		B8A33C9F2140C82D00870A71 /* LGBButtonExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33C9E2140C82D00870A71 /* LGBButtonExample.m */; };
+		B8A33CA22140C83F00870A71 /* LGBTextViewExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33CA12140C83F00870A71 /* LGBTextViewExample.m */; };
+		B8A33CA52140C85500870A71 /* LGBTextFieldExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33CA42140C85500870A71 /* LGBTextFieldExample.m */; };
+		B8A33CA82140C86500870A71 /* LGBBorderExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33CA72140C86500870A71 /* LGBBorderExample.m */; };
 		CFD944E5756104575909C3BD /* Pods_LGBViewFormat_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ECFA30AC7AA545029358AE /* Pods_LGBViewFormat_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +42,7 @@
 /* Begin PBXFileReference section */
 		01348FA651CC562C0D7E5E3C /* Pods_LGBViewFormat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGBViewFormat_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0785D0BC30B52509C557B859 /* Pods-LGBViewFormat_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBViewFormat_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGBViewFormat_Example/Pods-LGBViewFormat_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4D89329023476E79548E801A /* LGBViewFormat.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LGBViewFormat.podspec; path = ../LGBViewFormat.podspec; sourceTree = "<group>"; };
+		4D89329023476E79548E801A /* LGBViewFormat.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LGBViewFormat.podspec; path = ../LGBViewFormat.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* LGBViewFormat_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGBViewFormat_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +65,20 @@
 		67ECFA30AC7AA545029358AE /* Pods_LGBViewFormat_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGBViewFormat_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		688D9CCF2F1E187E6DBEAFD2 /* Pods-LGBViewFormat_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBViewFormat_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LGBViewFormat_Example/Pods-LGBViewFormat_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6C3FA76B5C0DF408B494BEF8 /* Pods-LGBViewFormat_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBViewFormat_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LGBViewFormat_Tests/Pods-LGBViewFormat_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9DA42D111F89781435E2A5CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9DA42D111F89781435E2A5CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AAA7B4B232E631AE5BD2C8F3 /* Pods-LGBViewFormat_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGBViewFormat_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LGBViewFormat_Tests/Pods-LGBViewFormat_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E286AE9576C0BA9522BC680C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B8A33C9A2140C7F200870A71 /* LGBLableExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBLableExample.h; sourceTree = "<group>"; };
+		B8A33C9B2140C7F200870A71 /* LGBLableExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBLableExample.m; sourceTree = "<group>"; };
+		B8A33C9D2140C82D00870A71 /* LGBButtonExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBButtonExample.h; sourceTree = "<group>"; };
+		B8A33C9E2140C82D00870A71 /* LGBButtonExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBButtonExample.m; sourceTree = "<group>"; };
+		B8A33CA02140C83F00870A71 /* LGBTextViewExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBTextViewExample.h; sourceTree = "<group>"; };
+		B8A33CA12140C83F00870A71 /* LGBTextViewExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBTextViewExample.m; sourceTree = "<group>"; };
+		B8A33CA32140C85500870A71 /* LGBTextFieldExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBTextFieldExample.h; sourceTree = "<group>"; };
+		B8A33CA42140C85500870A71 /* LGBTextFieldExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBTextFieldExample.m; sourceTree = "<group>"; };
+		B8A33CA62140C86500870A71 /* LGBBorderExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBBorderExample.h; sourceTree = "<group>"; };
+		B8A33CA72140C86500870A71 /* LGBBorderExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBBorderExample.m; sourceTree = "<group>"; };
+		B8A33CA92140FFAE00870A71 /* LGBLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBLog.h; sourceTree = "<group>"; };
+		E286AE9576C0BA9522BC680C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +157,18 @@
 			children = (
 				6003F59C195388D20070C39A /* LGBAppDelegate.h */,
 				6003F59D195388D20070C39A /* LGBAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LGBViewController.h */,
 				6003F5A6195388D20070C39A /* LGBViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				B8A33C9D2140C82D00870A71 /* LGBButtonExample.h */,
+				B8A33C9E2140C82D00870A71 /* LGBButtonExample.m */,
+				B8A33CA02140C83F00870A71 /* LGBTextViewExample.h */,
+				B8A33CA12140C83F00870A71 /* LGBTextViewExample.m */,
+				B8A33CA32140C85500870A71 /* LGBTextFieldExample.h */,
+				B8A33CA42140C85500870A71 /* LGBTextFieldExample.m */,
+				B8A33CA62140C86500870A71 /* LGBBorderExample.h */,
+				B8A33CA72140C86500870A71 /* LGBBorderExample.m */,
+				B8A33C9A2140C7F200870A71 /* LGBLableExample.h */,
+				B8A33C9B2140C7F200870A71 /* LGBLableExample.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -163,6 +183,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* LGBViewFormat-Prefix.pch */,
+				B8A33CA92140FFAE00870A71 /* LGBLog.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -250,6 +271,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lgb789;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7CKU2V5F6W;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,8 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -403,8 +425,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A33C9F2140C82D00870A71 /* LGBButtonExample.m in Sources */,
 				6003F59E195388D20070C39A /* LGBAppDelegate.m in Sources */,
+				B8A33C9C2140C7F300870A71 /* LGBLableExample.m in Sources */,
 				6003F5A7195388D20070C39A /* LGBViewController.m in Sources */,
+				B8A33CA82140C86500870A71 /* LGBBorderExample.m in Sources */,
+				B8A33CA52140C85500870A71 /* LGBTextFieldExample.m in Sources */,
+				B8A33CA22140C83F00870A71 /* LGBTextViewExample.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,14 +469,6 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -533,12 +552,15 @@
 			baseConfigurationReference = 0785D0BC30B52509C557B859 /* Pods-LGBViewFormat_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LGBViewFormat/LGBViewFormat-Prefix.pch";
 				INFOPLIST_FILE = "LGBViewFormat/LGBViewFormat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +570,15 @@
 			baseConfigurationReference = 688D9CCF2F1E187E6DBEAFD2 /* Pods-LGBViewFormat_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CKU2V5F6W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LGBViewFormat/LGBViewFormat-Prefix.pch";
 				INFOPLIST_FILE = "LGBViewFormat/LGBViewFormat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
