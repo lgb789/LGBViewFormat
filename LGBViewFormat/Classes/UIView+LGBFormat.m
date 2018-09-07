@@ -452,7 +452,7 @@
     if (_userInteractionEnabled == nil) {
         __weak typeof(self) weakSelf = self;
         _userInteractionEnabled = ^(BOOL attr){
-            if ([weakSelf.view respondsToSelector:@selector(userInteractionEnabled)]) {
+            if ([weakSelf.view respondsToSelector:@selector(setUserInteractionEnabled:)]) {
                 [weakSelf.view setValue:@(attr) forKey:NSStringFromSelector(@selector(userInteractionEnabled))];
             }
             return weakSelf;
