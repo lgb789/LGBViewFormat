@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LGBViewFormat'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '通过链式方式设置View属性'
 
 # This description is used to generate tags and improve search results.

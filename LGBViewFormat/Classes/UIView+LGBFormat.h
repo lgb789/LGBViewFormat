@@ -157,6 +157,8 @@ typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
  UITextFieldViewMode
  */
 @property (nonatomic, copy) BFormatIntegerAttr clearButtonMode;
+
+@property (nonatomic, copy) BFormatBoolAttr scrollEnabled;
 @end
 
 @interface UIView (LGBFormat)

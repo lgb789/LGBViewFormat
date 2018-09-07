@@ -475,6 +475,20 @@
     return _clearButtonMode;
 }
 
+-(BFormatBoolAttr)scrollEnabled
+{
+    if (_scrollEnabled == nil) {
+        __weak typeof(self) weakSelf = self;
+        _scrollEnabled = ^(BOOL attr){
+            if ([weakSelf.view respondsToSelector:@selector(setScrollEnabled:)]) {
+                [weakSelf.view setValue:@(attr) forKey:NSStringFromSelector(@selector(scrollEnabled))];
+            }
+            return weakSelf;
+        };
+    }
+    return _scrollEnabled;
+}
+
 #pragma mark - private
 -(BFormatAttr)formatAttrForSel:(SEL)sel
 {
@@ -509,7 +523,6 @@
     }
     
 }
-
 
 #pragma mark - private properties
 -(NSMutableParagraphStyle *)paragraphStyle
