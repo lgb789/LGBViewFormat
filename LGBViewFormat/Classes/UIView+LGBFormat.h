@@ -107,11 +107,6 @@ typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
  */
 @property (nonatomic, copy) BFormatTvPaddingAttr textContainerInset;
 
-/**
- UITextView text 垂直居中
- */
-@property (nonatomic, copy) BFormatBoolAttr textVerticalCenter;
-
 @property (nonatomic, copy) BFormatBorderAttr topBorder;
 @property (nonatomic, copy) BFormatBorderAttr leftBorder;
 @property (nonatomic, copy) BFormatBorderAttr bottomBorder;

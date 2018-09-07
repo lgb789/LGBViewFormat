@@ -10,13 +10,13 @@
 #import <objc/runtime.h>
 
 @interface LGBFormatManager ()
-@property (nonatomic, assign) BOOL verticalCenter;
 @property (nonatomic, strong) NSMutableParagraphStyle *paragraphStyle;
 @end
 
 @implementation LGBFormatManager
 
 #pragma mark - public
+
 -(BFormatAttr)textColor
 {
     if (_textColor == nil) {
@@ -238,14 +238,16 @@
 -(BFormatButtonImageAttr)imagePosition
 {
     if (_imagePosition == nil) {
-        if ([self.view isKindOfClass:[UIButton class]]) {
-            __weak typeof(self) weakSelf = self;
-            _imagePosition = ^(LGBButtonImagePosition position, CGFloat padding){
-                UIButton *bt = (UIButton *)weakSelf.view;
-                [bt bt_setImagePosition:position andImageTitlePadding:padding];
-                return weakSelf;
-            };
-        }
+        
+        __weak typeof(self) weakSelf = self;
+        _imagePosition = ^(LGBButtonImagePosition position, CGFloat padding){
+            if ([weakSelf.view isKindOfClass:[UIButton class]]) {
+                [(UIButton *)weakSelf.view bt_setImagePosition:position andImageTitlePadding:padding];
+            }
+            
+            return weakSelf;
+        };
+        
     }
     return _imagePosition;
 }
@@ -295,34 +297,18 @@
 -(BFormatTvPaddingAttr)textContainerInset
 {
     if (_textContainerInset == nil) {
-        if ([self.view isKindOfClass:[UITextView class]]) {
-            __weak typeof(self) weakSelf = self;
-            _textContainerInset = ^(UIEdgeInsets padding){
-                UITextView *tv = (UITextView *)weakSelf.view;
-                tv.textContainerInset = padding;
-                return weakSelf;
-            };
-        }
+        
+        __weak typeof(self) weakSelf = self;
+        _textContainerInset = ^(UIEdgeInsets padding){
+            if ([weakSelf.view isKindOfClass:[UITextView class]]) {
+                [(UITextView *)weakSelf.view setTextContainerInset:padding];
+            }
+            
+            return weakSelf;
+        };
+        
     }
     return _textContainerInset;
-}
-
--(BFormatBoolAttr)textVerticalCenter
-{
-    if (_textVerticalCenter == nil) {
-        if ([self.view isKindOfClass:[UITextView class]]) {
-            __weak typeof(self) weakSelf = self;
-            _textVerticalCenter = ^(BOOL attr){
-                weakSelf.verticalCenter = attr;
-                if (attr) {
-                    [weakSelf.view addObserver:weakSelf forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:NULL];
-                    [weakSelf verticalCenterForTextView:(UITextView *)weakSelf.view];//必须放下面
-                }
-                return weakSelf;
-            };
-        }
-    }
-    return _textVerticalCenter;
 }
 
 -(BFormatBorderAttr)topBorder
@@ -522,21 +508,6 @@
     
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:@"contentSize"]) {
-        if ([object isKindOfClass:[UITextView class]] && self.verticalCenter) {
-            [self verticalCenterForTextView:(UITextView *)object];
-        }
-    }
-}
-
--(void)verticalCenterForTextView:(UITextView *)textView
-{
-    CGFloat topCorrect = ([textView bounds].size.height - textView.contentSize.height * textView.zoomScale) / 2.0;
-    topCorrect = topCorrect < 0.0 ? 0.0 : topCorrect;
-    textView.contentInset = UIEdgeInsetsMake(topCorrect, 0, 0, 0);
-}
 
 #pragma mark - private properties
 -(NSMutableParagraphStyle *)paragraphStyle
