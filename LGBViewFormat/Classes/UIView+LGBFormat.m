@@ -9,7 +9,7 @@
 #import "UIView+LGBFormat.h"
 #import <objc/runtime.h>
 
-@interface LGBFormatManager ()
+@interface LGBFormatManager () <UITextFieldDelegate>
 @property (nonatomic, strong) NSMutableParagraphStyle *paragraphStyle;
 @end
 
@@ -287,6 +287,8 @@
         _editable = ^(BOOL attr){
             if ([weakSelf.view respondsToSelector:@selector(setEditable:)]) {
                 [weakSelf.view setValue:@(attr) forKey:NSStringFromSelector(@selector(editable))];
+            }else if ([weakSelf.view isKindOfClass:[UITextField class]] && attr == NO){
+                ((UITextField *)weakSelf.view).delegate = weakSelf;
             }
             return weakSelf;
         };
@@ -516,6 +518,12 @@
         _paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     }
     return _paragraphStyle;
+}
+
+#pragma mark - delegate
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    return NO;
 }
 
 @end
