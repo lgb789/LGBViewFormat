@@ -489,6 +489,34 @@
     return _scrollEnabled;
 }
 
+-(BFormatBoolAttr)showsVerticalScrollIndicator
+{
+    if (_showsVerticalScrollIndicator == nil) {
+        __weak typeof(self) weakSelf = self;
+        _showsVerticalScrollIndicator = ^(BOOL attr){
+            if ([weakSelf.view respondsToSelector:@selector(setShowsVerticalScrollIndicator:)]) {
+                [weakSelf.view setValue:@(attr) forKey:NSStringFromSelector(@selector(showsVerticalScrollIndicator))];
+            }
+            return weakSelf;
+        };
+    }
+    return _showsVerticalScrollIndicator;
+}
+
+-(BFormatBoolAttr)showsHorizontalScrollIndicator
+{
+    if (_showsHorizontalScrollIndicator == nil) {
+        __weak typeof(self) weakSelf = self;
+        _showsHorizontalScrollIndicator = ^(BOOL attr){
+            if ([weakSelf.view respondsToSelector:@selector(setShowsHorizontalScrollIndicator:)]) {
+                [weakSelf.view setValue:@(attr) forKey:NSStringFromSelector(@selector(showsHorizontalScrollIndicator))];
+            }
+            return weakSelf;
+        };
+    }
+    return _showsHorizontalScrollIndicator;
+}
+
 #pragma mark - private
 -(BFormatAttr)formatAttrForSel:(SEL)sel
 {
@@ -506,16 +534,19 @@
     if ([view respondsToSelector:@selector(attributedText)]) {
         NSAttributedString *attrString = [view attributedText];
         NSMutableAttributedString *text = nil;
-        NSString *t = [view text];
+        NSString *t = [view text] ? [view text] : @"";
         if (attrString) {
             text = [[NSMutableAttributedString alloc] initWithAttributedString:attrString];
         }else{
-            text = [[NSMutableAttributedString alloc] initWithString:t ? t : @""];
+            text = [[NSMutableAttributedString alloc] initWithString:t];
         }
         
         if (text) {
             NSString *str = string ? string : t;
-            NSRange range = [(t ? t : @"") rangeOfString:str];
+            NSRange range = [t rangeOfString:str];
+            if (range.location == NSNotFound) {
+                return;
+            }
             [text addAttributes:attributes range:range];
             
             [view setValue:text forKey:NSStringFromSelector(@selector(attributedText))];

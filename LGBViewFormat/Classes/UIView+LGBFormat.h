@@ -159,6 +159,10 @@ typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
 @property (nonatomic, copy) BFormatIntegerAttr clearButtonMode;
 
 @property (nonatomic, copy) BFormatBoolAttr scrollEnabled;
+
+@property (nonatomic, copy) BFormatBoolAttr showsVerticalScrollIndicator;
+
+@property (nonatomic, copy) BFormatBoolAttr showsHorizontalScrollIndicator;
 @end
 
 @interface UIView (LGBFormat)
