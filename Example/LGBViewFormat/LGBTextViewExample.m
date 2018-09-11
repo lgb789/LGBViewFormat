@@ -7,6 +7,7 @@
 //
 
 #import "LGBTextViewExample.h"
+//#import "UITextView+sideview.h"
 
 @interface LGBTextViewExample ()
 @property (nonatomic, strong) UITextView *tv;
@@ -44,7 +45,7 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"change" style:UIBarButtonItemStylePlain target:self action:@selector(handleTapChange)];
     
-    UITextView *tv1 = [[UITextView alloc] initWithFrame:CGRectMake(15, 100, 280, 250)];
+    UITextView *tv1 = [[UITextView alloc] initWithFrame:CGRectMake(15, 100, 280, 200)];
     [self.view addSubview:tv1];
     
     tv1.lgb_format
@@ -78,6 +79,36 @@
     .strikethroughForString(1, UIColor.redColor, @"more white space");
     
     tv2.scrollEnabled = YES;
+    
+    
+    UITextView *tv3 = [[UITextView alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(tv2.frame) + 15, 280, 180)];
+    
+    [self.view addSubview:tv3];
+    
+    UIView *sideView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 125)];
+    sideView.backgroundColor = UIColor.greenColor;
+    
+    tv3.lgb_format
+    .backgroundColor(UIColor.lightGrayColor)
+    .font([UIFont systemFontOfSize:14.0])
+    .textColor(UIColor.purpleColor)
+    .text(@"好 UILabel line height not really good for my point of view, it’s to tight. I think it’s looks better when increased a little and added more white space between lines. Here is most simple way to change it in Swift.it’s to tight.  ")
+    //    .textContainerInset(UIEdgeInsetsMake(10, 15, 15, 10))
+    .textColorForString(UIColor.redColor, @"UILabel")
+    .underlineForString(NSUnderlineStyleSingle, UIColor.greenColor, @"Swift")
+    .fontForString([UIFont systemFontOfSize:20], @"good")
+    .backgroundColorForString(UIColor.yellowColor, @"it’s to tight")
+    .strikethroughForString(1, UIColor.redColor, @"more white space")
+    .textViewRightView(sideView, 0);
+    
+    
+//    [tv3 lgb_setsideView:sideView position:LGBTextViewSideViewPositionTopLeft padding:0];
+    
+    tv3.scrollEnabled = YES;
+    
+    CGSize size = [tv3 sizeThatFits:CGSizeMake(180, CGFLOAT_MAX)];
+    ZA_logSize(size);
+    ZA_logSize(tv3.contentSize);
 }
 #pragma mark ------------------------------------------------- delegate -------------------------------------------------
 

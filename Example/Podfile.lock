@@ -1,5 +1,5 @@
 PODS:
-  - LGBViewFormat (0.1.0)
+  - LGBViewFormat (0.1.5)
 
 DEPENDENCIES:
   - LGBViewFormat (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LGBViewFormat: 2ae741714a97fa6ecb87180b26f77f889c735487
+  LGBViewFormat: 86900b1e3074338dcee348684d5a9c4569996147
 
 PODFILE CHECKSUM: 36038c4e3195cfbf20d577481fd4407b2fa1d636
 
