@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIButton+imageposition.h"
 #import "UIView+border.h"
+#import "UITextView+sideview.h"
 
 @class LGBFormatManager;
 
@@ -24,6 +25,7 @@ typedef LGBFormatManager* (^BFormatBorderAttr)(UIColor *color, CGFloat size);
 typedef LGBFormatManager* (^BFormatMutableAttr)(id attr, NSString *str);
 typedef LGBFormatManager* (^BFormatMutableUnderLineAttr)(NSInteger type, UIColor *color, NSString *str);
 typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
+typedef LGBFormatManager* (^BFormatTvSideViewAttr)(UIView *sideView, CGFloat padding);
 
 
 @interface LGBFormatManager : NSObject
@@ -163,6 +165,10 @@ typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
 @property (nonatomic, copy) BFormatBoolAttr showsVerticalScrollIndicator;
 
 @property (nonatomic, copy) BFormatBoolAttr showsHorizontalScrollIndicator;
+
+@property (nonatomic, copy) BFormatTvSideViewAttr textViewLeftView;
+
+@property (nonatomic, copy) BFormatTvSideViewAttr textViewRightView;
 @end
 
 @interface UIView (LGBFormat)

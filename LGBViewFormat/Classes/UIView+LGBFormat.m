@@ -517,6 +517,38 @@
     return _showsHorizontalScrollIndicator;
 }
 
+-(BFormatTvSideViewAttr)textViewLeftView
+{
+    if (_textViewLeftView == nil) {
+        __weak typeof(self) weakSelf = self;
+        _textViewLeftView = ^(UIView *sideView, CGFloat padding){
+            if ([weakSelf.view isKindOfClass:[UITextView class]]) {
+                UITextView *tv = (UITextView *)weakSelf.view;
+                [tv lgb_setsideView:sideView position:LGBTextViewSideViewPositionTopLeft padding:padding];
+            }
+            return weakSelf;
+        };
+    }
+    
+    return _textViewLeftView;
+}
+
+-(BFormatTvSideViewAttr)textViewRightView
+{
+    if (_textViewRightView == nil) {
+        __weak typeof(self) weakSelf = self;
+        _textViewRightView = ^(UIView *sideView, CGFloat padding){
+            if ([weakSelf.view isKindOfClass:[UITextView class]]) {
+                UITextView *tv = (UITextView *)weakSelf.view;
+                [tv lgb_setsideView:sideView position:LGBTextViewSideViewPositionTopRight padding:padding];
+            }
+            return weakSelf;
+        };
+    }
+    
+    return _textViewRightView;
+}
+
 #pragma mark - private
 -(BFormatAttr)formatAttrForSel:(SEL)sel
 {
