@@ -85,7 +85,7 @@
     
     [self.view addSubview:tv3];
     
-    UIView *sideView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 125)];
+    UIView *sideView = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 50, 125)];
     sideView.backgroundColor = UIColor.greenColor;
     
     tv3.lgb_format
