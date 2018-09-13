@@ -30,6 +30,7 @@
                   @[@"UITextView", @"LGBTextViewExample"],
                   @[@"UITextField", @"LGBTextFieldExample"],
                   @[@"Border", @"LGBBorderExample"],
+                  @[@"TextViewPlaceHolder", @"LGBTextViewPlaceHolderController"],
                   ];
 }
 

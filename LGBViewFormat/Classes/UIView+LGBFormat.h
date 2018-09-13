@@ -26,6 +26,7 @@ typedef LGBFormatManager* (^BFormatMutableAttr)(id attr, NSString *str);
 typedef LGBFormatManager* (^BFormatMutableUnderLineAttr)(NSInteger type, UIColor *color, NSString *str);
 typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
 typedef LGBFormatManager* (^BFormatTvSideViewAttr)(UIView *sideView, CGFloat padding);
+typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIColor *placeHolderColor, NSString *text, UIColor *textColor);
 
 
 @interface LGBFormatManager : NSObject
@@ -144,7 +145,7 @@ typedef LGBFormatManager* (^BFormatTvSideViewAttr)(UIView *sideView, CGFloat pad
 @property (nonatomic, copy) BFormatMutableUnderLineAttr underlineForString;
 
 /**
- 设置行间距，当前 View 需要具备 attributedText 属性
+ 设置行间距，当前 View 需要具备 attributedText 属性，lineSpace 需要首先设置文本才生效
  */
 @property (nonatomic, copy) BFormatMutableSpaceAttr lineSpace;
 
@@ -169,6 +170,8 @@ typedef LGBFormatManager* (^BFormatTvSideViewAttr)(UIView *sideView, CGFloat pad
 @property (nonatomic, copy) BFormatTvSideViewAttr textViewLeftView;
 
 @property (nonatomic, copy) BFormatTvSideViewAttr textViewRightView;
+
+@property (nonatomic, copy) BFormatTvPlaceHolderAttr textViewPlaceholder;
 @end
 
 @interface UIView (LGBFormat)

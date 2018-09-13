@@ -12,6 +12,7 @@
 
 #import "LGBViewFormat.h"
 #import "UIButton+imageposition.h"
+#import "UITextView+placeholder.h"
 #import "UITextView+sideview.h"
 #import "UIView+border.h"
 #import "UIView+LGBFormat.h"

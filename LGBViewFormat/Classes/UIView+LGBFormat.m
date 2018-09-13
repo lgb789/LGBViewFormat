@@ -8,6 +8,7 @@
 
 #import "UIView+LGBFormat.h"
 #import <objc/runtime.h>
+#import "UITextView+placeholder.h"
 
 @interface LGBFormatManager () <UITextFieldDelegate>
 @property (nonatomic, strong) NSMutableParagraphStyle *paragraphStyle;
@@ -549,6 +550,20 @@
     return _textViewRightView;
 }
 
+-(BFormatTvPlaceHolderAttr)textViewPlaceholder
+{
+    if (_textViewPlaceholder == nil) {
+        __weak typeof(self) weakSelf = self;
+        _textViewPlaceholder = ^(NSString *placeholder, UIColor *placeHolderColor, NSString *text, UIColor *textColor){
+            if ([weakSelf.view isKindOfClass:[UITextView class]]) {
+                [(UITextView *)weakSelf.view lgb_setPlaceholder:placeholder placeholderColor:placeHolderColor text:text textColor:textColor];
+            }
+            return weakSelf;
+        };
+    }
+    return _textViewPlaceholder;
+}
+
 #pragma mark - private
 -(BFormatAttr)formatAttrForSel:(SEL)sel
 {
@@ -578,7 +593,7 @@
             NSRange range = [t rangeOfString:str];
             if (range.location == NSNotFound) {
                 return;
-            }
+            } 
             [text addAttributes:attributes range:range];
             
             [view setValue:text forKey:NSStringFromSelector(@selector(attributedText))];
