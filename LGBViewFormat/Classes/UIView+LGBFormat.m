@@ -184,12 +184,29 @@
             if ([weakSelf.view isKindOfClass:[UIButton class]]) {
                 UIButton *bt = (UIButton *)weakSelf.view;
                 [bt setTitleColor:attr forState:state];
+            }else if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                [weakSelf setSegmentedControl:(UISegmentedControl *)weakSelf.view attributeName:NSForegroundColorAttributeName attribute:attr state:state];
             }
             return weakSelf;
         };
     }
     return _titleColorForState;
 }
+
+-(BFormatControlAttr)titleFontForState
+{
+    if (_titleFontForState == nil) {
+        __weak typeof(self) weakSelf = self;
+        _titleFontForState = ^(id attr, UIControlState state){
+            if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                [weakSelf setSegmentedControl:(UISegmentedControl *)weakSelf.view attributeName:NSFontAttributeName attribute:attr state:state];
+            }
+            return weakSelf;
+        };
+    }
+    return _titleFontForState;
+}
+
 
 -(BFormatAttr)titleFont
 {
@@ -229,6 +246,13 @@
             if ([weakSelf.view isKindOfClass:[UIButton class]]) {
                 UIButton *bt = (UIButton *)weakSelf.view;
                 [bt setBackgroundImage:attr forState:state];
+            }else if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:state barMetrics:UIBarMetricsDefault];
+                if (state == UIControlStateSelected || state == UIControlStateHighlighted) {
+                    [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+                    [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+                    [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:UIControlStateHighlighted | UIControlStateSelected barMetrics:UIBarMetricsDefault];
+                }
             }
             return weakSelf;
         };
@@ -564,6 +588,20 @@
     return _textViewPlaceholder;
 }
 
+-(BFormatControlAttr)dividerImageForState
+{
+    if (_dividerImageForState == nil) {
+        __weak typeof(self) weakSelf = self;
+        _dividerImageForState = ^(id attr, UIControlState state){
+            if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                [(UISegmentedControl *)weakSelf.view setDividerImage:attr forLeftSegmentState:state rightSegmentState:state barMetrics:UIBarMetricsDefault];
+            }
+            return weakSelf;
+        };
+    }
+    return _dividerImageForState;
+}
+
 #pragma mark - private
 -(BFormatAttr)formatAttrForSel:(SEL)sel
 {
@@ -600,6 +638,14 @@
         }
     }
     
+}
+
+-(void)setSegmentedControl:(UISegmentedControl *)segmentedControl attributeName:(NSString *)attributeName attribute:(id)attribute state:(UIControlState)state
+{
+    NSDictionary *attr = [segmentedControl titleTextAttributesForState:state];
+    NSMutableDictionary *dic = attr ? [NSMutableDictionary dictionaryWithDictionary:attr] : [NSMutableDictionary dictionary];
+    [dic setObject:attribute forKey:attributeName];
+    [segmentedControl setTitleTextAttributes:dic forState:state];
 }
 
 #pragma mark - private properties

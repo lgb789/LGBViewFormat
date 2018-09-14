@@ -75,9 +75,14 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
 @property (nonatomic, copy) BFormatControlAttr titleForState;
 
 /**
- 设置 UIButton 标题颜色
+ 设置 UIButton UISegmentedControl 标题颜色
  */
 @property (nonatomic, copy) BFormatControlAttr titleColorForState;
+
+/**
+ 设置 UISegmentedControl 标题字体
+ */
+@property (nonatomic, copy) BFormatControlAttr titleFontForState;
 
 /**
  设置 UIButton 标题字体
@@ -90,7 +95,7 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
 @property (nonatomic, copy) BFormatControlAttr imageForState;
 
 /**
- 设置 UIButton 背景图片
+ 设置 UIButton UISegmentedControl 背景图片
  */
 @property (nonatomic, copy) BFormatControlAttr backgroundImageForState;
 
@@ -172,6 +177,12 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
 @property (nonatomic, copy) BFormatTvSideViewAttr textViewRightView;
 
 @property (nonatomic, copy) BFormatTvPlaceHolderAttr textViewPlaceholder;
+
+/**
+ 设置 UISegmentedControler 分割线图片
+ */
+@property (nonatomic, copy) BFormatControlAttr dividerImageForState;
+
 @end
 
 @interface UIView (LGBFormat)

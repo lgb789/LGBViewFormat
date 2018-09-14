@@ -31,6 +31,8 @@
                   @[@"UITextField", @"LGBTextFieldExample"],
                   @[@"Border", @"LGBBorderExample"],
                   @[@"TextViewPlaceHolder", @"LGBTextViewPlaceHolderController"],
+                  @[@"SegmentedControl", @"LGBUISegmentedControlController"],
+                  
                   ];
 }
 

@@ -27,6 +27,8 @@
 		B8A33CA52140C85500870A71 /* LGBTextFieldExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33CA42140C85500870A71 /* LGBTextFieldExample.m */; };
 		B8A33CA82140C86500870A71 /* LGBBorderExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33CA72140C86500870A71 /* LGBBorderExample.m */; };
 		B8A33E522149EF5B00870A71 /* LGBTextViewPlaceHolderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33E512149EF5B00870A71 /* LGBTextViewPlaceHolderController.m */; };
+		B8A33E97214B63F200870A71 /* LGBUISegmentedControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33E96214B63F200870A71 /* LGBUISegmentedControlController.m */; };
+		B8A33E9A214B64BF00870A71 /* UIImage+lgb_image.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A33E98214B64BF00870A71 /* UIImage+lgb_image.m */; };
 		CFD944E5756104575909C3BD /* Pods_LGBViewFormat_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67ECFA30AC7AA545029358AE /* Pods_LGBViewFormat_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,10 @@
 		B8A33CA92140FFAE00870A71 /* LGBLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBLog.h; sourceTree = "<group>"; };
 		B8A33E502149EF5B00870A71 /* LGBTextViewPlaceHolderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBTextViewPlaceHolderController.h; sourceTree = "<group>"; };
 		B8A33E512149EF5B00870A71 /* LGBTextViewPlaceHolderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBTextViewPlaceHolderController.m; sourceTree = "<group>"; };
+		B8A33E95214B63F200870A71 /* LGBUISegmentedControlController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBUISegmentedControlController.h; sourceTree = "<group>"; };
+		B8A33E96214B63F200870A71 /* LGBUISegmentedControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBUISegmentedControlController.m; sourceTree = "<group>"; };
+		B8A33E98214B64BF00870A71 /* UIImage+lgb_image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+lgb_image.m"; sourceTree = "<group>"; };
+		B8A33E99214B64BF00870A71 /* UIImage+lgb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+lgb_image.h"; sourceTree = "<group>"; };
 		E286AE9576C0BA9522BC680C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +164,8 @@
 		6003F593195388D20070C39A /* Example for LGBViewFormat */ = {
 			isa = PBXGroup;
 			children = (
+				B8A33E99214B64BF00870A71 /* UIImage+lgb_image.h */,
+				B8A33E98214B64BF00870A71 /* UIImage+lgb_image.m */,
 				6003F59C195388D20070C39A /* LGBAppDelegate.h */,
 				6003F59D195388D20070C39A /* LGBAppDelegate.m */,
 				6003F5A5195388D20070C39A /* LGBViewController.h */,
@@ -174,6 +182,8 @@
 				B8A33C9B2140C7F200870A71 /* LGBLableExample.m */,
 				B8A33E502149EF5B00870A71 /* LGBTextViewPlaceHolderController.h */,
 				B8A33E512149EF5B00870A71 /* LGBTextViewPlaceHolderController.m */,
+				B8A33E95214B63F200870A71 /* LGBUISegmentedControlController.h */,
+				B8A33E96214B63F200870A71 /* LGBUISegmentedControlController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -382,10 +392,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A33E97214B63F200870A71 /* LGBUISegmentedControlController.m in Sources */,
 				B8A33C9F2140C82D00870A71 /* LGBButtonExample.m in Sources */,
 				6003F59E195388D20070C39A /* LGBAppDelegate.m in Sources */,
 				B8A33E522149EF5B00870A71 /* LGBTextViewPlaceHolderController.m in Sources */,
 				B8A33C9C2140C7F300870A71 /* LGBLableExample.m in Sources */,
+				B8A33E9A214B64BF00870A71 /* UIImage+lgb_image.m in Sources */,
 				6003F5A7195388D20070C39A /* LGBViewController.m in Sources */,
 				B8A33CA82140C86500870A71 /* LGBBorderExample.m in Sources */,
 				B8A33CA52140C85500870A71 /* LGBTextFieldExample.m in Sources */,
