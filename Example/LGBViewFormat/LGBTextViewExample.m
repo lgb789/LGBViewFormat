@@ -99,8 +99,9 @@
     .fontForString([UIFont systemFontOfSize:20], @"good")
     .backgroundColorForString(UIColor.yellowColor, @"it’s to tight")
     .strikethroughForString(1, UIColor.redColor, @"more white space")
-    .textViewRightView(sideView, 0);
-    
+    .textViewRightView(sideView, 0)
+    .selectable(NO);
+
     
 //    [tv3 lgb_setsideView:sideView position:LGBTextViewSideViewPositionTopLeft padding:0];
     

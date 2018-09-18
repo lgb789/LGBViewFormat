@@ -183,6 +183,8 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
  */
 @property (nonatomic, copy) BFormatControlAttr dividerImageForState;
 
+@property (nonatomic, copy) BFormatBoolAttr selectable;
+
 @end
 
 @interface UIView (LGBFormat)

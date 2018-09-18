@@ -602,6 +602,20 @@
     return _dividerImageForState;
 }
 
+-(BFormatBoolAttr)selectable
+{
+    if (_selectable == nil) {
+        __weak typeof(self) weakSelf = self;
+        _selectable = ^(BOOL attr){
+            if ([weakSelf.view respondsToSelector:@selector(setSelectable:)]) {
+                [weakSelf.view setValue:@(attr) forKey:NSStringFromSelector(@selector(selectable))];
+            }
+            return weakSelf;
+        };
+    }
+    return _selectable;
+}
+
 #pragma mark - private
 -(BFormatAttr)formatAttrForSel:(SEL)sel
 {
