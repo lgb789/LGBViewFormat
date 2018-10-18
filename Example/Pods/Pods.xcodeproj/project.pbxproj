@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		080B3B0D2A4453BA5FF4974665C17068 /* LGBViewFormat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 267044010D0D6C27FA6B9071E9E8B0CB /* LGBViewFormat-dummy.m */; };
-		0BD7D051D2D490676776B48C6078D7A0 /* UIView+border.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A5C0CCFBFC2FE7F9C30D660916292E /* UIView+border.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C3E48DD2ABA89602253C4A18A496DC5 /* UIView+border.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF82FEB0DA6C751127ED9EE89170711 /* UIView+border.m */; };
 		0FD2FA9CC65BC57AAFAA37B4FCBAFAFA /* Pods-LGBViewFormat_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FB07647C53D511E5119B6010925167 /* Pods-LGBViewFormat_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10A6B747FA49CF51CAA618124DB447F7 /* UITextView+sideview.h in Headers */ = {isa = PBXBuildFile; fileRef = 073E1C7DC2377B2C314A089E8CD48CB1 /* UITextView+sideview.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		197F7915E3F91CC962321590C1C7FB3C /* UIView+border.m in Sources */ = {isa = PBXBuildFile; fileRef = 72142408D6356662533684E7E3224E5A /* UIView+border.m */; };
-		24B3F4EDE2EE8AFF44F2D26E80539B14 /* UIButton+imageposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 05318D0553B44CA4F7FEFB5BD447DC89 /* UIButton+imageposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CF6084665E44223F2DD283580DDC53B /* UITextView+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F69804425295C92999ADFA7B64FB42 /* UITextView+placeholder.m */; };
-		5304F772DAEFCAA639392B016FB084EE /* UITextView+placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = D449CB3B3BEF8BB32C194E1F04385985 /* UITextView+placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		181A189F9645DC9F279435AED883B850 /* UITextView+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2AEE8A7D7AE3D48152593CC44CF9F /* UITextView+placeholder.m */; };
+		1C6B5F0B88B935CDE4FB6643461C2262 /* UIView+border.h in Headers */ = {isa = PBXBuildFile; fileRef = FED7BBBBF6310B6082B48BF5F967F6EB /* UIView+border.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22E91E5B1E82DBDC6C5D7BBAF3F13802 /* UISegmentedControl+underline.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C212526686D02F9072CA14B035CFE00 /* UISegmentedControl+underline.m */; };
+		278AF3E8F0E94A4C0852C58317F50EE5 /* UITextView+placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = BC28B76BB79CBA921D17C9CBC7310EE2 /* UITextView+placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB2F64BBA8449B361FC95903BF2A427 /* UIView+LGBFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD297CDEE53F612C1540FB450CF74B7 /* UIView+LGBFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320E42C9CBE3E30A4E394B1C0D44A9D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		368E9F9269F8F03A6C9A5B40F2FF8C4D /* LGBViewFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 615C1B97FCD9E7E1853DB992A8ACD44C /* LGBViewFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57776C37BB61AA249E3694208C5DCDC2 /* UIButton+imageposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7715020C135161C334C4DB14F35DF6 /* UIButton+imageposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		695B3E99D2795804EAF10B6D84AAED42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		77B42CFAE78EA0BC49C3E58AE85BB4BE /* UIButton+imageposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3247D28FBF52D50318945D2C1D1CA646 /* UIButton+imageposition.m */; };
-		7C2A5277C0393D8B235E10FEA023D3CC /* LGBViewFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 869FFF53856F6A75C4C645E17387DA2F /* LGBViewFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E944E0733D43E44B137B1F2ED1E4903 /* LGBViewFormat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23401A6B99243824D8C17FF343BD807D /* LGBViewFormat-dummy.m */; };
+		7254ECF1A2BF8CFDCF5627DE7F22CA0D /* UITextView+sideview.h in Headers */ = {isa = PBXBuildFile; fileRef = 3203CF09015D40192B607EB4D2D469FD /* UITextView+sideview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736449C3FB28A00B505247C49BE36E3A /* UITextView+sideview.m in Sources */ = {isa = PBXBuildFile; fileRef = 55019E817E24717420E5EC3A429BFA7D /* UITextView+sideview.m */; };
+		75BB8474A91BC1761977F97E0007C5CC /* UISegmentedControl+underline.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D7C579508726BDEF68A9863190051B /* UISegmentedControl+underline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C32AB8826D6937970CF553C94AB51F2 /* Pods-LGBViewFormat_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0BCBB56E661F1A8C5F653D538C6EF /* Pods-LGBViewFormat_Example-dummy.m */; };
+		98EEF91A8CB9F9998763E5AA85A960EA /* LGBViewFormat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE6301207AAD2FA1499E9B4FB45BD6E3 /* LGBViewFormat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FF541D9D5DB0C67703F3AFC2CE294E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		B44616F73DE7A0DB976717DFBC5622D5 /* LGBViewFormat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2695B4FF6C51CC668BAFBD76743ED827 /* LGBViewFormat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5D584FD1808A94883AA05C825E3B977 /* UITextView+sideview.m in Sources */ = {isa = PBXBuildFile; fileRef = 136A5AA2933A80400A228B01F7438706 /* UITextView+sideview.m */; };
-		D48EC21424790005392C4D465CF911DA /* UIView+LGBFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 391847D948E4E7B39E1E76D5BDAF84C1 /* UIView+LGBFormat.m */; };
+		AD6C43DAE003589C862F4B445B438528 /* UIView+LGBFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = B041587BE70E5AEF8A63B8991A347E99 /* UIView+LGBFormat.m */; };
+		AE8237546F92EF0D8F54C24952CBBF50 /* UIButton+imageposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 381AE4DFA14438B9F62B5C47049FFD7C /* UIButton+imageposition.m */; };
 		D8D0AA8AF963D9EE6A70684EECCF1BB9 /* Pods-LGBViewFormat_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B594128D7C5A9FA7A3261C0C3042CAF7 /* Pods-LGBViewFormat_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAE91D5DF799BA99AF68FB5996E1BA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		F0B82EAD05D2539EEBC82A2B2AEE80CD /* Pods-LGBViewFormat_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A14DE8C60E0DF15E5CE410483965084E /* Pods-LGBViewFormat_Tests-dummy.m */; };
-		F6E650E9BE65074E88C67D203D6043A4 /* UIView+LGBFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3E106A206997B87BAF5C17CFD8D80C /* UIView+LGBFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D937345C2A4FDA28EA209681178E3593;
+			remoteGlobalIDString = 9BA77D3E9524970E9416761FA8D2C552;
 			remoteInfo = LGBViewFormat;
 		};
 		7A7AE2CBA3EC3C50BEB79A167CC2AAC5 /* PBXContainerItemProxy */ = {
@@ -47,50 +49,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05318D0553B44CA4F7FEFB5BD447DC89 /* UIButton+imageposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+imageposition.h"; path = "LGBViewFormat/Classes/UIButton+imageposition.h"; sourceTree = "<group>"; };
-		073E1C7DC2377B2C314A089E8CD48CB1 /* UITextView+sideview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+sideview.h"; path = "LGBViewFormat/Classes/UITextView+sideview.h"; sourceTree = "<group>"; };
-		08A5C0CCFBFC2FE7F9C30D660916292E /* UIView+border.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+border.h"; path = "LGBViewFormat/Classes/UIView+border.h"; sourceTree = "<group>"; };
-		0C3139BBC90369AA1099347D4203A6BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		136A5AA2933A80400A228B01F7438706 /* UITextView+sideview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+sideview.m"; path = "LGBViewFormat/Classes/UITextView+sideview.m"; sourceTree = "<group>"; };
+		08D7C579508726BDEF68A9863190051B /* UISegmentedControl+underline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+underline.h"; path = "LGBViewFormat/Classes/UISegmentedControl+underline.h"; sourceTree = "<group>"; };
 		17F7459D7C1CD0BBEC5D305705CB6952 /* Pods-LGBViewFormat_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGBViewFormat_Example.modulemap"; sourceTree = "<group>"; };
-		19F69804425295C92999ADFA7B64FB42 /* UITextView+placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+placeholder.m"; path = "LGBViewFormat/Classes/UITextView+placeholder.m"; sourceTree = "<group>"; };
+		23401A6B99243824D8C17FF343BD807D /* LGBViewFormat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGBViewFormat-dummy.m"; sourceTree = "<group>"; };
 		25F46D6808DDEF6766F8CE5C4F37F529 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		267044010D0D6C27FA6B9071E9E8B0CB /* LGBViewFormat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGBViewFormat-dummy.m"; sourceTree = "<group>"; };
-		2695B4FF6C51CC668BAFBD76743ED827 /* LGBViewFormat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGBViewFormat-umbrella.h"; sourceTree = "<group>"; };
-		2A775AFB8A505F9FBBE0FC6AEB738697 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FFF994DC6076A4F048BF66CFC33D862 /* Pods-LGBViewFormat_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGBViewFormat_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3247D28FBF52D50318945D2C1D1CA646 /* UIButton+imageposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+imageposition.m"; path = "LGBViewFormat/Classes/UIButton+imageposition.m"; sourceTree = "<group>"; };
-		32525F96CF250437BABD103C50DB1750 /* LGBViewFormat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGBViewFormat-prefix.pch"; sourceTree = "<group>"; };
-		391847D948E4E7B39E1E76D5BDAF84C1 /* UIView+LGBFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LGBFormat.m"; path = "LGBViewFormat/Classes/UIView+LGBFormat.m"; sourceTree = "<group>"; };
+		3203CF09015D40192B607EB4D2D469FD /* UITextView+sideview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+sideview.h"; path = "LGBViewFormat/Classes/UITextView+sideview.h"; sourceTree = "<group>"; };
+		381AE4DFA14438B9F62B5C47049FFD7C /* UIButton+imageposition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+imageposition.m"; path = "LGBViewFormat/Classes/UIButton+imageposition.m"; sourceTree = "<group>"; };
+		3AB2AEE8A7D7AE3D48152593CC44CF9F /* UITextView+placeholder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+placeholder.m"; path = "LGBViewFormat/Classes/UITextView+placeholder.m"; sourceTree = "<group>"; };
 		48FB07647C53D511E5119B6010925167 /* Pods-LGBViewFormat_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGBViewFormat_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4C8C7764449653AF9D22F674F66F91A0 /* Pods-LGBViewFormat_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGBViewFormat_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4FBA135DF0AFF65D6C9CAEA4DD9DACDB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51DA9CF98089D333250E6615441FBFBC /* LGBViewFormat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGBViewFormat.xcconfig; sourceTree = "<group>"; };
 		540D77B04D652940F28F364848DF1D6F /* Pods-LGBViewFormat_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGBViewFormat_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		55019E817E24717420E5EC3A429BFA7D /* UITextView+sideview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+sideview.m"; path = "LGBViewFormat/Classes/UITextView+sideview.m"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B7715020C135161C334C4DB14F35DF6 /* UIButton+imageposition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+imageposition.h"; path = "LGBViewFormat/Classes/UIButton+imageposition.h"; sourceTree = "<group>"; };
 		61502CDD2BBB135075D2B427ACB51D47 /* Pods-LGBViewFormat_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGBViewFormat_Example-frameworks.sh"; sourceTree = "<group>"; };
-		63C2876B31D9B90F7FBB5D0343DB0FEE /* LGBViewFormat.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LGBViewFormat.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		72142408D6356662533684E7E3224E5A /* UIView+border.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+border.m"; path = "LGBViewFormat/Classes/UIView+border.m"; sourceTree = "<group>"; };
+		615C1B97FCD9E7E1853DB992A8ACD44C /* LGBViewFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGBViewFormat.h; path = LGBViewFormat/Classes/LGBViewFormat.h; sourceTree = "<group>"; };
+		68B928D7C3043028876A190C387EBDAC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7D3FAF76AB7ED628962F3C8B3EBFB08B /* Pods-LGBViewFormat_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LGBViewFormat_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		800CFDA0A28EDB5E7A6F51B290A2C6A6 /* Pods_LGBViewFormat_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGBViewFormat_Tests.framework; path = "Pods-LGBViewFormat_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84596242EE6B7774F3E93FEC9D3C3113 /* LGBViewFormat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGBViewFormat.xcconfig; sourceTree = "<group>"; };
-		869FFF53856F6A75C4C645E17387DA2F /* LGBViewFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGBViewFormat.h; path = LGBViewFormat/Classes/LGBViewFormat.h; sourceTree = "<group>"; };
 		8776F3769F59F857F97027432C3A768B /* Pods-LGBViewFormat_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGBViewFormat_Tests-resources.sh"; sourceTree = "<group>"; };
+		8A5C31FFE992D4927A3384D1C339FCF0 /* LGBViewFormat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGBViewFormat-prefix.pch"; sourceTree = "<group>"; };
 		8BB0BCBB56E661F1A8C5F653D538C6EF /* Pods-LGBViewFormat_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGBViewFormat_Example-dummy.m"; sourceTree = "<group>"; };
+		8C212526686D02F9072CA14B035CFE00 /* UISegmentedControl+underline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+underline.m"; path = "LGBViewFormat/Classes/UISegmentedControl+underline.m"; sourceTree = "<group>"; };
 		8C3920449A11D53546CBF0B9716A4E4A /* Pods-LGBViewFormat_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGBViewFormat_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9CEF0A2FC1CE1FF80504A8FE76658F1F /* Pods-LGBViewFormat_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGBViewFormat_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A14DE8C60E0DF15E5CE410483965084E /* Pods-LGBViewFormat_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LGBViewFormat_Tests-dummy.m"; sourceTree = "<group>"; };
 		AC9CF0F7FB3B86C6E7A6D739EFAF0FD6 /* LGBViewFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LGBViewFormat.framework; path = LGBViewFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACD297CDEE53F612C1540FB450CF74B7 /* UIView+LGBFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LGBFormat.h"; path = "LGBViewFormat/Classes/UIView+LGBFormat.h"; sourceTree = "<group>"; };
 		AF3D019F8C8A6EBAC6936F3DB51D655B /* Pods-LGBViewFormat_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGBViewFormat_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B041587BE70E5AEF8A63B8991A347E99 /* UIView+LGBFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LGBFormat.m"; path = "LGBViewFormat/Classes/UIView+LGBFormat.m"; sourceTree = "<group>"; };
 		B594128D7C5A9FA7A3261C0C3042CAF7 /* Pods-LGBViewFormat_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LGBViewFormat_Example-umbrella.h"; sourceTree = "<group>"; };
-		C5434DF3765857D65A27B7262D658D39 /* LGBViewFormat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LGBViewFormat.modulemap; sourceTree = "<group>"; };
+		BC28B76BB79CBA921D17C9CBC7310EE2 /* UITextView+placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+placeholder.h"; path = "LGBViewFormat/Classes/UITextView+placeholder.h"; sourceTree = "<group>"; };
+		C3C644A5FEEFC04CC89E8ED25FF90F69 /* LGBViewFormat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LGBViewFormat.modulemap; sourceTree = "<group>"; };
 		C6E8A9ADC407EDFE46697EAD29B8782A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF82FEB0DA6C751127ED9EE89170711 /* UIView+border.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+border.m"; path = "LGBViewFormat/Classes/UIView+border.m"; sourceTree = "<group>"; };
 		D17929EBAC2653230FF0F3333B48E480 /* Pods-LGBViewFormat_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LGBViewFormat_Tests.modulemap"; sourceTree = "<group>"; };
-		D449CB3B3BEF8BB32C194E1F04385985 /* UITextView+placeholder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+placeholder.h"; path = "LGBViewFormat/Classes/UITextView+placeholder.h"; sourceTree = "<group>"; };
-		D561C5E5BB7211CC73AFEFEECD72D9AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D5B187C0A65A4B496FBEB2C978EC2E7B /* LGBViewFormat.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LGBViewFormat.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DE6301207AAD2FA1499E9B4FB45BD6E3 /* LGBViewFormat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGBViewFormat-umbrella.h"; sourceTree = "<group>"; };
+		E2383AB8641F0AC6F1B9E5A9B50C0804 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E536E3765394C9BA5F3121D03C753AF6 /* Pods-LGBViewFormat_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LGBViewFormat_Example-resources.sh"; sourceTree = "<group>"; };
 		E60729379799DD1EE88CF42C13E76189 /* Pods_LGBViewFormat_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LGBViewFormat_Example.framework; path = "Pods-LGBViewFormat_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA3E106A206997B87BAF5C17CFD8D80C /* UIView+LGBFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LGBFormat.h"; path = "LGBViewFormat/Classes/UIView+LGBFormat.h"; sourceTree = "<group>"; };
 		FA4B97380BC892DD19348509722B0301 /* Pods-LGBViewFormat_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LGBViewFormat_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FED7BBBBF6310B6082B48BF5F967F6EB /* UIView+border.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+border.h"; path = "LGBViewFormat/Classes/UIView+border.h"; sourceTree = "<group>"; };
 		FFC204EA9C0EACDF95B52C2288A6CCF0 /* Pods-LGBViewFormat_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LGBViewFormat_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,14 +107,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4BCD53873697E9833F5C4110879EC9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAE91D5DF799BA99AF68FB5996E1BA05 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8C8D5BA60194259B91E2804218367D15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,17 +115,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1798CEE4A5931B709EED3040E2885FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320E42C9CBE3E30A4E394B1C0D44A9D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D336B876FD56231AD63C163864B9EF3 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B1C876AE2721EB264D1244CC80656C56 /* LGBViewFormat */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		463AF4C036806A79A175AF45C7A493FE /* Pods-LGBViewFormat_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,16 +144,6 @@
 			path = "Target Support Files/Pods-LGBViewFormat_Example";
 			sourceTree = "<group>";
 		};
-		565F247C91F5F4C3AA01065463EE8602 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				63C2876B31D9B90F7FBB5D0343DB0FEE /* LGBViewFormat.podspec */,
-				0C3139BBC90369AA1099347D4203A6BA /* LICENSE */,
-				D561C5E5BB7211CC73AFEFEECD72D9AC /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,11 +156,33 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				2D336B876FD56231AD63C163864B9EF3 /* Development Pods */,
+				9FEC72DC21C4E4A91B9A6F935DEBDBAE /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CBA231BEE575260A434EE675C06CDC13 /* Products */,
 				B27B63BDA088D222E9B86D129B0D5B13 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8B0682E83D584FD6E330F8D261F52324 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FBA135DF0AFF65D6C9CAEA4DD9DACDB /* Info.plist */,
+				C3C644A5FEEFC04CC89E8ED25FF90F69 /* LGBViewFormat.modulemap */,
+				51DA9CF98089D333250E6615441FBFBC /* LGBViewFormat.xcconfig */,
+				23401A6B99243824D8C17FF343BD807D /* LGBViewFormat-dummy.m */,
+				8A5C31FFE992D4927A3384D1C339FCF0 /* LGBViewFormat-prefix.pch */,
+				DE6301207AAD2FA1499E9B4FB45BD6E3 /* LGBViewFormat-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LGBViewFormat";
+			sourceTree = "<group>";
+		};
+		9FEC72DC21C4E4A91B9A6F935DEBDBAE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0FC8B56BB4DA0E9F8021B4F66058824 /* LGBViewFormat */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		ADCBAF64E3DAF77C77734E2723D8C422 /* Pods-LGBViewFormat_Tests */ = {
@@ -195,27 +203,6 @@
 			path = "Target Support Files/Pods-LGBViewFormat_Tests";
 			sourceTree = "<group>";
 		};
-		B1C876AE2721EB264D1244CC80656C56 /* LGBViewFormat */ = {
-			isa = PBXGroup;
-			children = (
-				869FFF53856F6A75C4C645E17387DA2F /* LGBViewFormat.h */,
-				05318D0553B44CA4F7FEFB5BD447DC89 /* UIButton+imageposition.h */,
-				3247D28FBF52D50318945D2C1D1CA646 /* UIButton+imageposition.m */,
-				D449CB3B3BEF8BB32C194E1F04385985 /* UITextView+placeholder.h */,
-				19F69804425295C92999ADFA7B64FB42 /* UITextView+placeholder.m */,
-				073E1C7DC2377B2C314A089E8CD48CB1 /* UITextView+sideview.h */,
-				136A5AA2933A80400A228B01F7438706 /* UITextView+sideview.m */,
-				08A5C0CCFBFC2FE7F9C30D660916292E /* UIView+border.h */,
-				72142408D6356662533684E7E3224E5A /* UIView+border.m */,
-				EA3E106A206997B87BAF5C17CFD8D80C /* UIView+LGBFormat.h */,
-				391847D948E4E7B39E1E76D5BDAF84C1 /* UIView+LGBFormat.m */,
-				565F247C91F5F4C3AA01065463EE8602 /* Pod */,
-				B736C329605C3DD195B73035FF20DBE0 /* Support Files */,
-			);
-			name = LGBViewFormat;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		B27B63BDA088D222E9B86D129B0D5B13 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,20 +210,6 @@
 				ADCBAF64E3DAF77C77734E2723D8C422 /* Pods-LGBViewFormat_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B736C329605C3DD195B73035FF20DBE0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2A775AFB8A505F9FBBE0FC6AEB738697 /* Info.plist */,
-				C5434DF3765857D65A27B7262D658D39 /* LGBViewFormat.modulemap */,
-				84596242EE6B7774F3E93FEC9D3C3113 /* LGBViewFormat.xcconfig */,
-				267044010D0D6C27FA6B9071E9E8B0CB /* LGBViewFormat-dummy.m */,
-				32525F96CF250437BABD103C50DB1750 /* LGBViewFormat-prefix.pch */,
-				2695B4FF6C51CC668BAFBD76743ED827 /* LGBViewFormat-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LGBViewFormat";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -257,6 +230,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DD55A4194F580741FA1515BE594B48F6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D5B187C0A65A4B496FBEB2C978EC2E7B /* LGBViewFormat.podspec */,
+				68B928D7C3043028876A190C387EBDAC /* LICENSE */,
+				E2383AB8641F0AC6F1B9E5A9B50C0804 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F0FC8B56BB4DA0E9F8021B4F66058824 /* LGBViewFormat */ = {
+			isa = PBXGroup;
+			children = (
+				615C1B97FCD9E7E1853DB992A8ACD44C /* LGBViewFormat.h */,
+				5B7715020C135161C334C4DB14F35DF6 /* UIButton+imageposition.h */,
+				381AE4DFA14438B9F62B5C47049FFD7C /* UIButton+imageposition.m */,
+				08D7C579508726BDEF68A9863190051B /* UISegmentedControl+underline.h */,
+				8C212526686D02F9072CA14B035CFE00 /* UISegmentedControl+underline.m */,
+				BC28B76BB79CBA921D17C9CBC7310EE2 /* UITextView+placeholder.h */,
+				3AB2AEE8A7D7AE3D48152593CC44CF9F /* UITextView+placeholder.m */,
+				3203CF09015D40192B607EB4D2D469FD /* UITextView+sideview.h */,
+				55019E817E24717420E5EC3A429BFA7D /* UITextView+sideview.m */,
+				FED7BBBBF6310B6082B48BF5F967F6EB /* UIView+border.h */,
+				CEF82FEB0DA6C751127ED9EE89170711 /* UIView+border.m */,
+				ACD297CDEE53F612C1540FB450CF74B7 /* UIView+LGBFormat.h */,
+				B041587BE70E5AEF8A63B8991A347E99 /* UIView+LGBFormat.m */,
+				DD55A4194F580741FA1515BE594B48F6 /* Pod */,
+				8B0682E83D584FD6E330F8D261F52324 /* Support Files */,
+			);
+			name = LGBViewFormat;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,25 +274,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51F4FF1EB7A338711645EF438E0CB35E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EEF91A8CB9F9998763E5AA85A960EA /* LGBViewFormat-umbrella.h in Headers */,
+				368E9F9269F8F03A6C9A5B40F2FF8C4D /* LGBViewFormat.h in Headers */,
+				57776C37BB61AA249E3694208C5DCDC2 /* UIButton+imageposition.h in Headers */,
+				75BB8474A91BC1761977F97E0007C5CC /* UISegmentedControl+underline.h in Headers */,
+				278AF3E8F0E94A4C0852C58317F50EE5 /* UITextView+placeholder.h in Headers */,
+				7254ECF1A2BF8CFDCF5627DE7F22CA0D /* UITextView+sideview.h in Headers */,
+				1C6B5F0B88B935CDE4FB6643461C2262 /* UIView+border.h in Headers */,
+				2BB2F64BBA8449B361FC95903BF2A427 /* UIView+LGBFormat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81999A7089D65F5B45D0C822E1130072 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D8D0AA8AF963D9EE6A70684EECCF1BB9 /* Pods-LGBViewFormat_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D929968C09A9CCAC3E2B327B4ED0D4E0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B44616F73DE7A0DB976717DFBC5622D5 /* LGBViewFormat-umbrella.h in Headers */,
-				7C2A5277C0393D8B235E10FEA023D3CC /* LGBViewFormat.h in Headers */,
-				24B3F4EDE2EE8AFF44F2D26E80539B14 /* UIButton+imageposition.h in Headers */,
-				5304F772DAEFCAA639392B016FB084EE /* UITextView+placeholder.h in Headers */,
-				10A6B747FA49CF51CAA618124DB447F7 /* UITextView+sideview.h in Headers */,
-				0BD7D051D2D490676776B48C6078D7A0 /* UIView+border.h in Headers */,
-				F6E650E9BE65074E88C67D203D6043A4 /* UIView+LGBFormat.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,14 +338,14 @@
 			productReference = 800CFDA0A28EDB5E7A6F51B290A2C6A6 /* Pods_LGBViewFormat_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D937345C2A4FDA28EA209681178E3593 /* LGBViewFormat */ = {
+		9BA77D3E9524970E9416761FA8D2C552 /* LGBViewFormat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 695E4269D3B9CAE4C982C0AB8319EE2E /* Build configuration list for PBXNativeTarget "LGBViewFormat" */;
+			buildConfigurationList = 9087028441B5CD017EE7A9722D8850FD /* Build configuration list for PBXNativeTarget "LGBViewFormat" */;
 			buildPhases = (
-				D929968C09A9CCAC3E2B327B4ED0D4E0 /* Headers */,
-				3F5C323E172E357468A73C6C123A4E1C /* Sources */,
-				7D4BCD53873697E9833F5C4110879EC9 /* Frameworks */,
-				41C4CF0289B57EBF241A22030B138595 /* Resources */,
+				51F4FF1EB7A338711645EF438E0CB35E /* Headers */,
+				2D3001E5BDC2FBBDE2FCA640691E47DC /* Sources */,
+				B1798CEE4A5931B709EED3040E2885FC /* Frameworks */,
+				D6D4FBCE578455B7D21327F99465A486 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -370,7 +377,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D937345C2A4FDA28EA209681178E3593 /* LGBViewFormat */,
+				9BA77D3E9524970E9416761FA8D2C552 /* LGBViewFormat */,
 				20DD1F7AAD14D7BB4F499E2C56B10475 /* Pods-LGBViewFormat_Example */,
 				74CA3BD9316B71768FED24E0787F8143 /* Pods-LGBViewFormat_Tests */,
 			);
@@ -378,13 +385,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41C4CF0289B57EBF241A22030B138595 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AEEB1DA12B3E558558BDA79A095EE076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,19 +399,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D4FBCE578455B7D21327F99465A486 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F5C323E172E357468A73C6C123A4E1C /* Sources */ = {
+		2D3001E5BDC2FBBDE2FCA640691E47DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				080B3B0D2A4453BA5FF4974665C17068 /* LGBViewFormat-dummy.m in Sources */,
-				77B42CFAE78EA0BC49C3E58AE85BB4BE /* UIButton+imageposition.m in Sources */,
-				4CF6084665E44223F2DD283580DDC53B /* UITextView+placeholder.m in Sources */,
-				B5D584FD1808A94883AA05C825E3B977 /* UITextView+sideview.m in Sources */,
-				197F7915E3F91CC962321590C1C7FB3C /* UIView+border.m in Sources */,
-				D48EC21424790005392C4D465CF911DA /* UIView+LGBFormat.m in Sources */,
+				6E944E0733D43E44B137B1F2ED1E4903 /* LGBViewFormat-dummy.m in Sources */,
+				AE8237546F92EF0D8F54C24952CBBF50 /* UIButton+imageposition.m in Sources */,
+				22E91E5B1E82DBDC6C5D7BBAF3F13802 /* UISegmentedControl+underline.m in Sources */,
+				181A189F9645DC9F279435AED883B850 /* UITextView+placeholder.m in Sources */,
+				736449C3FB28A00B505247C49BE36E3A /* UITextView+sideview.m in Sources */,
+				0C3E48DD2ABA89602253C4A18A496DC5 /* UIView+border.m in Sources */,
+				AD6C43DAE003589C862F4B445B438528 /* UIView+LGBFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +445,7 @@
 		1FE2C1E8C43046A8A110DA15FB9EF66C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LGBViewFormat;
-			target = D937345C2A4FDA28EA209681178E3593 /* LGBViewFormat */;
+			target = 9BA77D3E9524970E9416761FA8D2C552 /* LGBViewFormat */;
 			targetProxy = 158D3FBB8F32545949DA4080B1344C05 /* PBXContainerItemProxy */;
 		};
 		66D227ADE424DFDC3716E0901D544BF9 /* PBXTargetDependency */ = {
@@ -476,6 +484,67 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12C36F018BBEC8A3AE4893F2606E72FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DA9CF98089D333250E6615441FBFBC /* LGBViewFormat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LGBViewFormat/LGBViewFormat-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LGBViewFormat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LGBViewFormat/LGBViewFormat.modulemap";
+				PRODUCT_MODULE_NAME = LGBViewFormat;
+				PRODUCT_NAME = LGBViewFormat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A0AECCB703095B783844B2E5A8213F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DA9CF98089D333250E6615441FBFBC /* LGBViewFormat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LGBViewFormat/LGBViewFormat-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LGBViewFormat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LGBViewFormat/LGBViewFormat.modulemap";
+				PRODUCT_MODULE_NAME = LGBViewFormat;
+				PRODUCT_NAME = LGBViewFormat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -642,37 +711,6 @@
 			};
 			name = Release;
 		};
-		BD50863986F32BA150A4D98433C4709A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84596242EE6B7774F3E93FEC9D3C3113 /* LGBViewFormat.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LGBViewFormat/LGBViewFormat-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LGBViewFormat/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LGBViewFormat/LGBViewFormat.modulemap";
-				PRODUCT_MODULE_NAME = LGBViewFormat;
-				PRODUCT_NAME = LGBViewFormat;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,36 +775,6 @@
 			};
 			name = Debug;
 		};
-		F8647F24316CA21799CFF6142C6C162A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84596242EE6B7774F3E93FEC9D3C3113 /* LGBViewFormat.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LGBViewFormat/LGBViewFormat-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LGBViewFormat/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LGBViewFormat/LGBViewFormat.modulemap";
-				PRODUCT_MODULE_NAME = LGBViewFormat;
-				PRODUCT_NAME = LGBViewFormat;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -788,20 +796,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		695E4269D3B9CAE4C982C0AB8319EE2E /* Build configuration list for PBXNativeTarget "LGBViewFormat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8647F24316CA21799CFF6142C6C162A /* Debug */,
-				BD50863986F32BA150A4D98433C4709A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8BA1A7FD9FF896681152DA6018CD9A98 /* Build configuration list for PBXNativeTarget "Pods-LGBViewFormat_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				807F78A3E6463DB35A844C79E01D9B50 /* Debug */,
 				A792794CD1831FFD1D86345CBCE67BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9087028441B5CD017EE7A9722D8850FD /* Build configuration list for PBXNativeTarget "LGBViewFormat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C36F018BBEC8A3AE4893F2606E72FE /* Debug */,
+				6A0AECCB703095B783844B2E5A8213F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

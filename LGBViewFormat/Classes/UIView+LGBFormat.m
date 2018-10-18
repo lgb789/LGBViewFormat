@@ -9,6 +9,7 @@
 #import "UIView+LGBFormat.h"
 #import <objc/runtime.h>
 #import "UITextView+placeholder.h"
+#import "UISegmentedControl+underline.h"
 
 @interface LGBFormatManager () <UITextFieldDelegate>
 @property (nonatomic, strong) NSMutableParagraphStyle *paragraphStyle;
@@ -193,6 +194,23 @@
     return _titleColorForState;
 }
 
+-(BFormatControlStatesAttr)segmentedTitleColorForStates
+{
+    if (_segmentedTitleColorForStates == nil) {
+        __weak typeof(self) weakSelf = self;
+        _segmentedTitleColorForStates = ^(id attr, NSArray *states){
+            for (id state in states) {
+                if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                    [weakSelf setSegmentedControl:(UISegmentedControl *)weakSelf.view attributeName:NSForegroundColorAttributeName attribute:attr state:[state integerValue]];
+                }
+            }
+            
+            return weakSelf;
+        };
+    }
+    return _segmentedTitleColorForStates;
+}
+
 -(BFormatControlAttr)titleFontForState
 {
     if (_titleFontForState == nil) {
@@ -205,6 +223,23 @@
         };
     }
     return _titleFontForState;
+}
+
+-(BFormatControlStatesAttr)segmentedTitleFontForStates
+{
+    if (_segmentedTitleFontForStates == nil) {
+        __weak typeof(self) weakSelf = self;
+        _segmentedTitleFontForStates = ^(id attr, NSArray *states){
+            for (id state in states) {
+                if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                    [weakSelf setSegmentedControl:(UISegmentedControl *)weakSelf.view attributeName:NSFontAttributeName attribute:attr state:[state integerValue]];
+                }
+            }
+            
+            return weakSelf;
+        };
+    }
+    return _segmentedTitleFontForStates;
 }
 
 
@@ -258,6 +293,27 @@
         };
     }
     return _backgroundImageForState;
+}
+
+-(BFormatControlStatesAttr)segmentedBackgroundImageForStates
+{
+    if (_segmentedBackgroundImageForStates == nil) {
+        __weak typeof(self) weakSelf = self;
+        _segmentedBackgroundImageForStates = ^(id attr, NSArray *states){
+            if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                for (id state in states) {
+                    [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:[state integerValue] barMetrics:UIBarMetricsDefault];
+                    if ([state integerValue] == UIControlStateSelected || [state integerValue] == UIControlStateHighlighted) {
+                        [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+                        [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+                        [(UISegmentedControl *)weakSelf.view setBackgroundImage:attr forState:UIControlStateHighlighted | UIControlStateSelected barMetrics:UIBarMetricsDefault];
+                    }
+                }
+            }
+            return weakSelf;
+        };
+    }
+    return _segmentedBackgroundImageForStates;
 }
 
 -(BFormatButtonImageAttr)imagePosition
@@ -602,6 +658,23 @@
     return _dividerImageForState;
 }
 
+-(BFormatControlStatesAttr)segmentedDividerImageForStates
+{
+    if (_segmentedDividerImageForStates == nil) {
+        __weak typeof(self) weakSelf = self;
+        _segmentedDividerImageForStates = ^(id attr, NSArray *states){
+            if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                for (id state in states) {
+                    [(UISegmentedControl *)weakSelf.view setDividerImage:attr forLeftSegmentState:[state integerValue] rightSegmentState:[state integerValue] barMetrics:UIBarMetricsDefault];
+                }
+                
+            }
+            return weakSelf;
+        };
+    }
+    return _segmentedDividerImageForStates;
+}
+
 -(BFormatBoolAttr)selectable
 {
     if (_selectable == nil) {
@@ -614,6 +687,36 @@
         };
     }
     return _selectable;
+}
+
+-(BFormatSegmentedUnderLine)segmentedAddUnderLine
+{
+    if (_segmentedAddUnderLine == nil) {
+        __weak typeof(self) weakSelf = self;
+        _segmentedAddUnderLine = ^(UIColor *color, CGFloat height, CGFloat widthScale){
+            if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                [(UISegmentedControl *)weakSelf.view v_addUnderLineColor:color lineHeight:height lineWidthScale:widthScale];
+            }
+            return weakSelf;
+        };
+    }
+    
+    return _segmentedAddUnderLine;
+}
+
+-(BFormatSegmentedUnderLineAnimation)segmentedMoveUnderLine
+{
+    if (_segmentedMoveUnderLine == nil) {
+        __weak typeof(self) weakSelf = self;
+        _segmentedMoveUnderLine = ^(CGFloat duration){
+            if ([weakSelf.view isKindOfClass:[UISegmentedControl class]]){
+                [(UISegmentedControl *)weakSelf.view v_changeUnderLinePositionWithAnimationDuration:duration];
+            }
+            return weakSelf;
+        };
+    }
+    
+    return _segmentedMoveUnderLine;
 }
 
 #pragma mark - private

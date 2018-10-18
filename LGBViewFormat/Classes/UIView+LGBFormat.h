@@ -28,6 +28,10 @@ typedef LGBFormatManager* (^BFormatMutableSpaceAttr)(CGFloat space);
 typedef LGBFormatManager* (^BFormatTvSideViewAttr)(UIView *sideView, CGFloat padding);
 typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIColor *placeHolderColor, NSString *text, UIColor *textColor);
 
+typedef LGBFormatManager* (^BFormatControlStatesAttr)(id attr, NSArray *states);
+typedef LGBFormatManager* (^BFormatSegmentedUnderLine)(UIColor *color, CGFloat height, CGFloat widthScale);
+typedef LGBFormatManager* (^BFormatSegmentedUnderLineAnimation)(CGFloat duration);
+
 
 @interface LGBFormatManager : NSObject
 @property (nonatomic, weak) id view;
@@ -75,14 +79,24 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
 @property (nonatomic, copy) BFormatControlAttr titleForState;
 
 /**
- 设置 UIButton UISegmentedControl 标题颜色
+ 设置 UIButton UISegmentedControl (使用segmentedTitleColorForStates) 标题颜色
  */
 @property (nonatomic, copy) BFormatControlAttr titleColorForState;
+
+/**
+ 设置 UISegmentedControl 标题颜色
+ */
+@property (nonatomic, copy) BFormatControlStatesAttr segmentedTitleColorForStates;
 
 /**
  设置 UISegmentedControl 标题字体
  */
 @property (nonatomic, copy) BFormatControlAttr titleFontForState;
+
+/**
+ 设置 UISegmentedControl 标题字体
+ */
+@property (nonatomic, copy) BFormatControlStatesAttr segmentedTitleFontForStates;
 
 /**
  设置 UIButton 标题字体
@@ -95,9 +109,14 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
 @property (nonatomic, copy) BFormatControlAttr imageForState;
 
 /**
- 设置 UIButton UISegmentedControl 背景图片
+ 设置 UIButton UISegmentedControl (使用segmentedBackgroundImageForStates) 背景图片
  */
 @property (nonatomic, copy) BFormatControlAttr backgroundImageForState;
+
+/**
+ 设置 UISegmentedControl 背景图片
+ */
+@property (nonatomic, copy) BFormatControlStatesAttr segmentedBackgroundImageForStates;
 
 /**
  设置 UIButton Image 位置
@@ -179,11 +198,23 @@ typedef LGBFormatManager* (^BFormatTvPlaceHolderAttr)(NSString *placeholder, UIC
 @property (nonatomic, copy) BFormatTvPlaceHolderAttr textViewPlaceholder;
 
 /**
- 设置 UISegmentedControler 分割线图片
+ 设置 UISegmentedControl 分割线图片
  */
 @property (nonatomic, copy) BFormatControlAttr dividerImageForState;
 
+/**
+ 设置 UISegmentedControl 分割线图片
+ */
+@property (nonatomic, copy) BFormatControlStatesAttr segmentedDividerImageForStates;
+
 @property (nonatomic, copy) BFormatBoolAttr selectable;
+
+/**
+ 设置 UISegmentedControl 下划线
+ */
+@property (nonatomic, copy) BFormatSegmentedUnderLine segmentedAddUnderLine;
+
+@property (nonatomic, copy) BFormatSegmentedUnderLineAnimation segmentedMoveUnderLine;
 
 @end
 
