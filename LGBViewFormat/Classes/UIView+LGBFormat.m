@@ -109,7 +109,7 @@
         _leftView = ^(UIView *sideView, CGFloat padding,  UITextFieldViewMode mode){
             if ([weakSelf.view isKindOfClass:[UITextField class]]) {
                 
-                sideView.contentMode = UIViewContentModeLeft;
+//                sideView.contentMode = UIViewContentModeLeft;
                 CGRect frame = sideView.frame;
                 frame.size.width = frame.size.width + padding;
                 sideView.frame = frame;
@@ -131,7 +131,7 @@
         _rightView = ^(UIView *sideView, CGFloat padding,  UITextFieldViewMode mode){
             if ([weakSelf.view isKindOfClass:[UITextField class]]) {
                 
-                sideView.contentMode = UIViewContentModeRight;
+//                sideView.contentMode = UIViewContentModeRight;
                 CGRect frame = sideView.frame;
                 frame.size.width = frame.size.width + padding;
                 sideView.frame = frame;
